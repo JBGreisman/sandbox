@@ -25,7 +25,7 @@ def send_text(message, number):
 def main():
 
     # Text number
-    status = send_text("Here is a text!", sys.argv[1])
+    status = send_text(sys.argv[2], sys.argv[1])
     if (status):
         print "Success!"
     else:
