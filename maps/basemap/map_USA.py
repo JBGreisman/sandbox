@@ -16,11 +16,10 @@ if __name__ == '__main__':
     m = draw_USA()
     
     # Draw map background
-    m.fillcontinents(color='white', lake_color='#eeeeee')
+    m.fillcontinents(color='white', lake_color='lightblue')
     m.drawstates(color='lightgray')
     m.drawcoastlines(color='lightgray')
     m.drawcountries(color='black')
-    m.drawmapboundary(fill_color='#eeeeee')
-    m.shadedrelief()
+    m.drawmapboundary(fill_color='lightblue')
     
     plt.show()
