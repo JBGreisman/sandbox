@@ -25,4 +25,5 @@ if __name__ == "__main__":
                      tiles='Stamen Terrain',
                      zoom_start=13)
     map.line(locations=hike, line_color="red")
+    map.simple_marker([43.7925227, -110.8448492], popup="Lake Solitude")
     map.create_map("hike_CascadeCanyon.html")

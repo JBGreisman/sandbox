@@ -50,7 +50,7 @@
 
 <body>
 
-   <div class="folium-map" id="folium_c783797f2efe4b61a91014041a822b83" style="width: 100%; height: 100%"></div>
+   <div class="folium-map" id="folium_f97b1346c7bd4c4f9ab912f263e7aced" style="width: 100%; height: 100%"></div>
 
    <script>
 
@@ -94,7 +94,7 @@
       /*
       Creates the map and adds the selected layers
       */
-      var map = L.map('folium_c783797f2efe4b61a91014041a822b83', {
+      var map = L.map('folium_f97b1346c7bd4c4f9ab912f263e7aced', {
                                        center:[43.7687934593, -110.77445761],
                                        zoom: 13,
                                        maxBounds: bounds,
@@ -110,6 +110,15 @@
       //add the clustered markers to the group anyway
       map.addLayer(clusteredmarkers);
 
+      
+      var marker_1_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'blue',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_1 = L.marker([43.7925227, 
+							-110.8448492],
+							{'icon':marker_1_icon}
+							);
+      marker_1.bindPopup("Lake Solitude");
+      marker_1._popup.options.maxWidth = 300;
+      map.addLayer(marker_1)
       
 
       
